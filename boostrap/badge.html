@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Membuat Badge</title> 
+    <!-- Bootstrap CSS --> 
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
+    <style>
+        /* Custom ukuran badge */
+        .badge-lg {
+            font-size: 1.2rem;
+            padding: 0.6em 1em;
+        }
+        .badge-sm {
+            font-size: 0.7rem;
+            padding: 0.2em 0.5em;
+        }
+        /* Custom warna badge */
+        .bg-pink {
+            background-color: #e83e8c;
+            color: #fff;
+        }
+        .bg-orange {
+            background-color: #fd7e14;
+            color: #fff;
+        }
+    </style>
+</head> 
+<body> 
+    <div class="container mt-4"> 
+        <span class="badge bg-primary">primary</span> 
+        <span class="badge bg-secondary">secondary</span> 
+        <span class="badge bg-success">success</span> 
+        <span class="badge bg-danger">danger</span> 
+        <span class="badge bg-warning text-dark">warning</span> 
+        <span class="badge bg-info text-dark">info</span> 
+        <span class="badge bg-light text-dark">light</span> 
+        <span class="badge bg-dark">dark</span> 
+
+        <!-- Badge custom warna -->
+        <span class="badge bg-pink">pink</span>
+        <span class="badge bg-orange">orange</span>
+
+        <!-- Badge ukuran besar dan kecil -->
+        <span class="badge bg-success badge-lg">Large Badge</span>
+        <span class="badge bg-danger badge-sm">Small Badge</span>
+    </div> 
+
+    <hr> 
+    <button class="btn btn-primary">
+        Pemberitahuan <span class="badge bg-danger badge-lg">5</span>
+    </button> 
+
+    <button class="btn btn-success"> 
+        Pendaftar <span class="badge rounded-pill bg-primary badge-sm">115</span> 
+    </button> 
+
+    <!-- Bootstrap JS --> 
+    <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+</body>
+</html>
